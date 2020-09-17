@@ -1,0 +1,135 @@
+:root {
+  /* Primary */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  /* Neutral */
+  --Very-Dark-Blue: hsl(233, 31%, 78%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: var(--Very-Light-Gray);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+p {
+  font-size: 15px;
+}
+h1 {
+  font-size: 1.5rem;
+}
+header {
+  text-align: center;
+  padding: 1.5rem 1.75rem;
+  margin-top: 4.2rem;
+}
+.light {
+  font-weight: 200;
+}
+.boldi {
+  font-weight: 600;
+}
+.desc {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  margin: 0.75rem 0;
+}
+/* CARDS  */
+
+.cards {
+  margin: 1.5rem 1.5rem 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  margin: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px var(--Grayish-Blue);
+  padding: 1.2rem 2rem;
+  height: 225px;
+}
+.cards h2 {
+  font-size: 1.2rem;
+  padding-bottom: 0.25rem;
+}
+.cards p {
+  color: var(--Grayish-Blue);
+  font-size: 0.8rem;
+}
+.cards img {
+  display: block;
+  padding: 0.3rem 0;
+  margin-top: 1.5rem;
+  width: 3.5rem;
+  float: right;
+}
+#card-1 {
+  border-top: 4px solid var(--cyan);
+}
+#card-2 {
+  border-top: 4px solid var(--red);
+}
+#card-3 {
+  border-top: 4px solid var(--Orange);
+}
+#card-4 {
+  border-top: 4px solid var(--Blue);
+}
+
+@media (min-width: 768px) {
+  header {
+    width: 28rem;
+    margin: 3rem auto 0rem auto;
+    width: 600px;
+  }
+  h1 {
+    font-size: 2.3rem;
+    line-height: 1.5;
+  }
+  .desc {
+    font-size: 0.72rem;
+    margin: 0;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .container {
+    margin: auto;
+    width: calc(min(100%, 1200px));
+  }
+  .card {
+    margin: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 2rem;
+    position: relative;
+    height: 250px;
+  }
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards > div {
+    flex: 1;
+    width: 33%;
+  }
+  .cards h2 {
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+  }
+  .cards p {
+    font-size: 14px;
+  }
+  .cards .icon {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+  }
+}
